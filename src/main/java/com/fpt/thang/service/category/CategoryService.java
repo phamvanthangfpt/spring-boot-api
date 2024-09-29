@@ -1,7 +1,7 @@
-package com.fpt.thang.service;
+package com.fpt.thang.service.category;
 
-import com.fpt.thang.model.entity.Category;
-import com.fpt.thang.model.repository.ICategoryRepository;
+import com.fpt.thang.model.entity.category.Category;
+import com.fpt.thang.model.repository.category.ICategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

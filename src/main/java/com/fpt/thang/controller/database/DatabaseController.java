@@ -1,4 +1,4 @@
-package com.fpt.thang.controller;
+package com.fpt.thang.controller.database;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

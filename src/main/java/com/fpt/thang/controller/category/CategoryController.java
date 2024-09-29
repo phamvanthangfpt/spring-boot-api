@@ -1,7 +1,7 @@
-package com.fpt.thang.controller;
+package com.fpt.thang.controller.category;
 
-import com.fpt.thang.model.entity.Category;
-import com.fpt.thang.service.ICategoryService;
+import com.fpt.thang.model.entity.category.Category;
+import com.fpt.thang.service.category.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @CrossOrigin("*")
@@ -22,10 +22,10 @@ public class CategoryController {
 
     @GetMapping
     public ResponseEntity<Iterable<Category>> getAllCategory() {
-        logger.info("Fetching all categories...");
-        Iterable<Category> categories = categoryService.findAll();
-        System.out.println("Adding product: " + categories);
-        logger.info("Categories nè: {}", categories);
+//        logger.info("Fetching all categories...");
+//        Iterable<Category> categories = categoryService.findAll();
+//        System.out.println("Adding product: " + categories);
+//        logger.info("Categories nè: {}", categories);
         return new ResponseEntity<>(categoryService.findAll(), HttpStatus.OK);
     }
 
